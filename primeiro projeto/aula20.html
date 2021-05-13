@@ -6,11 +6,17 @@
 </head>
 
 <body>
-	<h1>Login</h1>
+	<h1>Entre ou cadastre-se</h1>
+
+	<h2>Entrar</h2>
 
 	<form>
-		<input type="text" name="nomeUsuario"><br>
-		<input type="password" name="senhaUsuario"><br>
+		Login:<br>
+		<input type="text" name="nomeUsuario"><br><br>
+
+		Senha:<br>
+		<input type="password" name="senhaUsuario"><br><br>
+		
 		<input type="button" name="botaoLogar" value="Enviar">
 		<!--
 			Poderia ser também:
@@ -18,4 +24,49 @@
 			Nesse caso, os dados apareceriam no link da página [INSEGURO]
 		-->
 	</form>
+
+	<h2>Cadastrar-se</h2>
+
+	<form> <!--Há o atributo action que invoca um script, o qualmanipulará os objetos do formulário pelo nome-->
+		Nome:<br>
+		<input 
+		type="text" 
+		name="nomeUsuarioNovo"
+		placeholder="Nome"><br>
+
+		Senha:<br>
+		<input 
+		type="password" 
+		name="senhaUsuarioNovo"
+		placeholder="Senha"><br><br>
+
+		Sexo:<br>
+		<input type="radio" name="sexo" value="m">Masculino<br>
+		<input type="radio" name="sexo" value="f">Feminino<br><br>
+
+		Interesses:<br>
+		<input type="checkbox" name="interesses">Esportes<br>
+		<input type="checkbox" name="interesses">Ciência<br>
+		<input type="checkbox" name="interesses">Arte<br>
+		<input type="checkbox" name="interesses">Notícias<br>
+		<input type="checkbox" name="interesses">Moda<br><br>
+
+		Seu local (Estado):<br>
+		<select>
+			<option>Ceará</option>
+			<option>Bahia</option>
+			<option>Maranhão</option>
+			<option>Pernambuco</option>
+			<option>Paraíba</option>
+			<option>Sergipe</option>
+			<option>Piauí</option>
+			<option>Alagoas</option>
+		</select><br><br>
+
+		<input 
+		type="submit" 
+		name="enviarDsdosNovoUsuario"
+		value="Cadastrar"> <!--O atributo value é o texto que aparece no botão é o seu valor-->
+	</form>
+
 </body>
