@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS on line</title>
+
+		<!--Css interno, 
+			as propriedades definidas em todas as tags do mesmo tipo são os seletores do css.
+			Mas também há as classes e id's:
+			classes: elementos classificados por tipo, e todos damesma classe têm as mesmas propriedades
+			id's: elementos são únicos, têm sua formatação própria.
+			É recomendado que haja um id por página ou por div-->
+		<style type="text/css">
+			
+			h1 {
+				text-align: center;
+				color: white;
+				background-color: green;
+				margin: 20px;
+				padding: 10px;
+				font-size: 35px;
+				width: 500px;
+			}
+
+			p {
+				background-color: yellow;
+				color: black;
+				font-size: 20px;
+				text-align: center;
+				margin: 20px;
+				padding: 10px;
+				width: 500px;
+			}
+
+			#corpo {
+				background: gray;
+			}
+
+		</style>
+	</head>
+	<body id="corpo">
+		<h1>Começo de uma página qualquer...</h1>
+
+		<!--O atributo style dentro da tag permite editar propriedades dos elementos dentro do código html, mas a prática não é o recomendado-->
+		<p>
+			Eu poderia até utilizar aqui aquele texto chamado de <em>Loren Ipsum</em>, mas sabe,quis somente escrever o que me viesse à mente, algo meu, nada mais.
+		</p>
+
+		<p>
+			Eu poderia até utilizar aqui também mais um trecho daquele texto chamado de <em>Loren Ipsum</em>, mas sabe, quis somente escrever o que me viesse à mente aqui também, algo meu, nada mais.
+		</p>
+	</body>
+</html>
